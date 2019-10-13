@@ -2,8 +2,8 @@
 function setup() {
 	createCanvas(windowWidth, windowHeight)
 	angleMode(DEGREES)
-	n = random(1, 10)
-	d = random(1,200)
+	n = 6
+	d = 72
 	scale = width * 0.2
 }
 
