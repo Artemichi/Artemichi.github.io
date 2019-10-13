@@ -4,7 +4,7 @@ function setup() {
 	angleMode(DEGREES)
 	n = random(1, 10)
 	d = random(1,200)
-	scale = width * 0.25
+	scale = width * 0.2
 }
 
 function draw() {
