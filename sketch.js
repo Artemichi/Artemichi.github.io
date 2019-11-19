@@ -2,8 +2,8 @@
 function setup() {
 	createCanvas(windowWidth, windowHeight)
 	angleMode(DEGREES)
-	n = 8
-	d = 67
+	n = 6
+	d = 72
 	a = 0
 	scale = width * 0.2
 }
@@ -27,8 +27,8 @@ function draw() {
 	}
 	endShape(CLOSE)
 
-	n+=0.000001
-	d+=0.0001
+	n+=random(0.0001)
+	d+=random(0.001)
 	
 	a += 0.1
 }

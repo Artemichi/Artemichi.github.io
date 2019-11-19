@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#chart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+.bar {
+  fill: darkturquoise;
+}
+/*# sourceMappingURL=style.css.map */
