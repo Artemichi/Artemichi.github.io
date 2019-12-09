@@ -1,10 +1,9 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
-  // n = 3.77;
-  // d = 33.56;
-  n = 0;
-  d = 70;
+  colorMode(HSB);
+  n = 3;
+  d = 66.75;
   na = 0.00001;
   da = 0.002;
   a = 0;
@@ -17,39 +16,16 @@ function setup() {
   } else {
     vScale = 1;
   }
-  alp = 100;
-  colors = [
-    {
-      r: 238,
-      g: 252,
-      b: 87
-    },
-    {
-      r: 227,
-      g: 101,
-      b: 136
-    },
-    {
-      r: 255,
-      g: 34,
-      b: 12
-    },
-    {
-      r: 243,
-      g: 66,
-      b: 19
-    }
-  ];
 }
 
 function draw() {
-  background(0);
+  background(255);
   translate(width / 2, height / 2);
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 3; i++) {
     rotate(a + i);
-    stroke(colors[i].r, colors[i].g, colors[i].b, alp);
-    noFill();
+    stroke(100 * i, 100, 100);
+    fill(0);
     beginShape();
     for (let i = 0; i < 300; i++) {
       let k = i * d;
@@ -63,6 +39,7 @@ function draw() {
 
   n += na;
   d += da;
+  a += 0.1;
 }
 
 function windowResized() {
