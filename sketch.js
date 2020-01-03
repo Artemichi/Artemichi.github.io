@@ -2,10 +2,10 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   colorMode(HSB);
-  n = 3;
+  n = 9;
   d = 66.75;
-  na = 0.00001;
-  da = 0.002;
+  na = 0.0001;
+  da = 0.0002;
   a = 0;
   if (window.innerWidth == 320) {
     vScale = 0.5;
