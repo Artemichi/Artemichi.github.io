@@ -2,10 +2,10 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   colorMode(HSB);
-  n = 9;
-  d = 66.75;
+  n = 12.51;
+  d = 56.78;
   na = 0.0001;
-  da = 0.0002;
+  da = 0.0001;
   a = 0;
   if (window.innerWidth == 320) {
     vScale = 0.5;
@@ -19,22 +19,22 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(0);
   translate(width / 2, height / 2);
 
   for (let i = 0; i < 3; i++) {
     rotate(a + i);
-    stroke(100 * i, 100, 100);
-    fill(0);
+    noStroke();
+    fill(100 * i, 100, 100, 0.6);
     beginShape();
     for (let i = 0; i < 300; i++) {
-      let k = i * d;
+      let k = (i * d) / 2;
       let r = i * sin(n * k) * vScale;
       let x = r * cos(k);
       let y = r * sin(k);
       vertex(x, y);
     }
-    endShape(CLOSE);
+    endShape();
   }
 
   n += na;
