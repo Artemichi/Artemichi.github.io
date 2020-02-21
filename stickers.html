@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+
+    <title>Animalis</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand" href="index.html">
+        <img src="favicon/favicon.ico" width="40" height="40" alt="logo" />
+        <span class="h3">
+          Animalis
+        </span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto ml-lg-5">
+          <li class="nav-item active">
+            <a class="btn btn-outline-dark my-2 mr-2" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item active">
+            <a class="btn btn-outline-dark my-2 mr-2" href="prices.html">Услуги и Цены</a>
+          </li>
+          <li class="nav-item active">
+            <button type="button" class="btn btn-outline-dark my-2" data-toggle="modal" data-target="#modalAdress">
+              Адрес
+            </button>
+          </li>
+        </ul>
+        <span class="navbar-text text-dark d-none d-lg-block">
+          8 (342) 247-01-09
+        </span>
+        <button class="btn btn-outline-dark my-2 ml-lg-4" data-toggle="modal" data-target="#ModalCenter">
+          Обратный звонок
+        </button>
+      </div>
+    </nav>
+
+    <!-- Modal Adress -->
+    <div
+      class="modal fade"
+      id="modalAdress"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalAdressTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalAdressTitle">
+              г.Пермь, Бульвар Гагарина, 70б
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2114.5773345944144!2d56.28448841612637!3d57.99499182431982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8c1250a332989%3A0x576ab617bdf50b35!2z0LEt0YAg0JPQsNCz0LDRgNC40L3QsCwgNzDQkSwg0J_QtdGA0LzRjCwg0J_QtdGA0LzRgdC60LjQuSDQutGA0LDQuSwgNjE0MDc3!5e0!3m2!1sru!2sru!4v1580030159079!5m2!1sru!2sru"
+              width="100%"
+              height="400px"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">
+              Закрыть
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal callBack -->
+    <div
+      class="modal fade"
+      id="ModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="ModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalCenterTitle">
+              Заказать обратный звонок
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Имя</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Введите имя"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+                required
+              />
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Телефон</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Введите телефон"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal" id="getCallback">
+              Отправить
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="h2">
+            Стикеры для питомцев
+          </div>
+          <p>
+            Наши загадочные стикеры наконец-то вошли в обиход!
+          </p>
+          <p>
+            Джек-рассел Сэм перед приемом у дерматолога сразу же подобрал себе стикер по настроению! Люц, как вы
+            понимаете, сам не выбирал — на него осторожно надели.
+          </p>
+          <p>
+            Приходите и вы выбрать настроение своему пушистику!
+          </p>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <img class="img-fluid" src="img/sDog.jpg" alt="" />
+          <img class="img-fluid mt-5" src="img/sCat.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+      <!-- Footer Text -->
+      <div class="container mt-5">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase font-weight-bold">Уникальная операция в Перми</h5>
+            <p>
+              Французский бульдог Жорик еще совсем щенок, но ему пришлось перенести очень тяжелую и сложную операцию,
+              требующую ювелирной работы.
+            </p>
+            <a class="btn btn-outline-dark btn mb-3" href="article.html" role="button">Подробнее</a>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 mb-md-0 mb-3">
+            <!-- Content -->
+            <h5 class="text-uppercase font-weight-bold">Стикеры для питомцев</h5>
+            <p>
+              Наши загадочные стикеры наконец-то вошли в обиход! Джек-рассел Сэм перед приемом у дерматолога сразу же
+              подобрал себе стикер по настроению! Приходите и вы выбрать настроение своему пушистику!
+            </p>
+            <a class="btn btn-outline-dark btn" href="stickers.html" role="button">Подробнее</a>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Text -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright</div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
